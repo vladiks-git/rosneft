@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/rosneft/static/css/main.073c9b0a.css",
-    "main.js": "/rosneft/static/js/main.c4cfb2e0.js",
-    "static/js/787.c84f5fc0.chunk.js": "/rosneft/static/js/787.c84f5fc0.chunk.js",
-    "static/media/logo.svg": "/rosneft/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/rosneft/static/css/main.4ee7926c.css",
+    "main.js": "/rosneft/static/js/main.9038a4c4.js",
     "index.html": "/rosneft/index.html",
-    "main.073c9b0a.css.map": "/rosneft/static/css/main.073c9b0a.css.map",
-    "main.c4cfb2e0.js.map": "/rosneft/static/js/main.c4cfb2e0.js.map",
-    "787.c84f5fc0.chunk.js.map": "/rosneft/static/js/787.c84f5fc0.chunk.js.map"
+    "main.4ee7926c.css.map": "/rosneft/static/css/main.4ee7926c.css.map",
+    "main.9038a4c4.js.map": "/rosneft/static/js/main.9038a4c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.c4cfb2e0.js"
+    "static/css/main.4ee7926c.css",
+    "static/js/main.9038a4c4.js"
   ]
 }
