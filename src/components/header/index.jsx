@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 
-export default function DenseAppBar() {
+export default function DenseAppBar({ onOpenNavigation }) {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ bgcolor: "rgba(255,211,1)" }}>
@@ -16,6 +16,7 @@ export default function DenseAppBar() {
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2, color: "#000" }}
+            onClick={onOpenNavigation}
           >
             <MenuIcon />
           </IconButton>

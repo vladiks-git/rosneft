@@ -1,0 +1,12 @@
+.navigation {
+  padding: 5px 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+  &.active span{
+    color: #000;
+    font-weight: 700;
+  }
+}
