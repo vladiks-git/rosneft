@@ -7,7 +7,7 @@ const SickLeaveCard = ({ sickLeaveItem }) => {
     <Card sx={{ boxShadow: "4px 4px 8px 0px rgba(34, 60, 80, 0.2)" }}>
       <CardHeader title="Больничный лист" sx={{ pb: 0 }} />
       <CardContent sx={{ pt: 1 }}>
-        <Box>
+        <Stack gap={0.2}>
           <Typography sx={{ fontSize: 16, fontWeight: 600 }} color="primary">
             Сотрудник:
           </Typography>
@@ -23,7 +23,7 @@ const SickLeaveCard = ({ sickLeaveItem }) => {
             <Typography color="text.secondary" variant="body2">СНИЛС:</Typography>
             <Typography variant="body2">{sickLeaveItem.patientSnils}</Typography>
           </Stack>
-        </Box>
+        </Stack>
         <Box>
           <Typography sx={{ fontSize: 16, fontWeight: 600 }} color="primary">
             Освобожден от работы:

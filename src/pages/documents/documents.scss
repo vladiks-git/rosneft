@@ -1,0 +1,29 @@
+.documents {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 16px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__item {
+    display: flex;
+    direction: row;
+    gap: 16px;
+  }
+
+  &__title {
+    color: #87879b;
+    min-width: 130px;
+  }
+
+  @media (max-width: 425px) {
+    gap: 20px;
+    &__item {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+}
