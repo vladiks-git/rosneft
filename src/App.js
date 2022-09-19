@@ -1,13 +1,18 @@
-import { DocumentsPage } from "./pages";
+import { AnnualInspectionPage, DocumentsPage } from "./pages";
 
 import "./App.css";
 import { Header } from "./components";
+import { Route, Routes } from "react-router";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <DocumentsPage />
+      <Routes>
+        <Route path="/" element={<DocumentsPage />} />
+        <Route path="annual" element={<AnnualInspectionPage />} />
+        <Route path="*" element={<>404</>} />
+      </Routes>
     </div>
   );
 }

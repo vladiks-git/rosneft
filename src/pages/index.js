@@ -1,3 +1,4 @@
+import AnnualInspectionPage from "./AnnualInspection";
 import DocumentsPage from "./documents";
 
-export { DocumentsPage };
+export { AnnualInspectionPage, DocumentsPage };
