@@ -1,3 +1,4 @@
 import Header from "./header";
+import { SickLeaveCard } from "./cards";
 
-export { Header };
+export { Header, SickLeaveCard };
