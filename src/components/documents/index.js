@@ -1,3 +1,4 @@
-import PersonalInfo from "./PersonalInfo";
+import PersonalInfo from "./PersonalInfo/PersonalInfo";
+import Vaccination from "./Vaccination/Vaccination";
 
-export { PersonalInfo };
+export { PersonalInfo, Vaccination };

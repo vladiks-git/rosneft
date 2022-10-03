@@ -5,7 +5,7 @@ import { Header, Navigation } from "./components";
 import { Route, Routes } from "react-router";
 import { Box } from "@mui/material";
 import { useState } from "react";
-
+import "./styles/variables.scss";
 function App() {
   const [isOpenNavigation, setIsOpenNavigation] = useState(false);
 
