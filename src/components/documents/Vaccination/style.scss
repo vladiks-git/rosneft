@@ -1,0 +1,28 @@
+@import "../../../styles/variables.scss";
+
+.vaccination-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &__title {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  &__item-title {
+    color: $card-title;
+  }
+
+  @media (max-width: 425px) {
+    gap: 20px;
+    &__item {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+}
