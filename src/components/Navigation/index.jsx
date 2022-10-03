@@ -33,6 +33,10 @@ const links = [
     path: "/sickLeave",
     title: "Больничный лист",
   },
+  {
+    path: "/bloodDonation",
+    title: "Сдача крови",
+  },
 ];
 
 function Navigation({ onClose, open }) {

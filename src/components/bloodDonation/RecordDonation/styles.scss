@@ -1,0 +1,10 @@
+.record-donation {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__apply{
+    margin-top: 20px;
+  }
+}

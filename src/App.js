@@ -1,4 +1,4 @@
-import {AnnualInspectionPage, DocumentsPage, RecordPage, SickLeavePage} from "./pages";
+import {AnnualInspectionPage, BloodDonation, DocumentsPage, RecordPage, SickLeavePage} from "./pages";
 
 import "./App.css";
 import { Header, Navigation } from "./components";
@@ -22,6 +22,7 @@ function App() {
           <Route path="/annualInspection" element={<AnnualInspectionPage />} />
           <Route path="/sickLeave" element={<SickLeavePage />} />
           <Route path="/record" element={<RecordPage />} />
+          <Route path="/bloodDonation" element={<BloodDonation />} />
           <Route path="*" element={<>404</>} />
         </Routes>
       </Box>
