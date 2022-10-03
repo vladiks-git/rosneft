@@ -11,7 +11,12 @@ function DocumentsPage() {
       <Typography variant="h4">Мои документы</Typography>
       <div className="documents__content">
         <PersonalInfo />
-        <Vaccination />
+        <Vaccination
+          title={"Вакцинация от COVID-19"}
+          information={"Прошел(-ла) вакцинацию против новой короновирусной инфекции COVID-19)"} />
+          <Vaccination
+          title={"Прививка от гриппа"}
+          information={"В большинстве случаев достаточно обратиться в детскую или взрослую поликлинику и вам там выдадут заполненный сертификат. Трудности могут возникнуть с больницами, но и это решаемо."} />
       </div>
     </div>
   );

@@ -4,13 +4,13 @@ import { CardContent } from "../../../ui-kit";
 
 import "./style.scss";
 
-function Vaccination() {
+function Vaccination({ title, information }) {
   return (
     <CardContent>
       <div className="vaccination-card">
         <div className="vaccination-card__title">
           <IconVaccination />
-          <h4>Вакцинация от COVID-19</h4>
+          <h4>{title}</h4>
         </div>
         <div className="vaccination-card__item">
           <p className="vaccination-card__item-title">Дата выдачи</p>
@@ -18,10 +18,7 @@ function Vaccination() {
         </div>
         <div className="vaccination-card__item">
           <p className="vaccination-card__item-title">Информация</p>
-          <p>
-            Прошел(-ла) вакциеацию против новой короновирусной инфекции
-            (COVID-19)
-          </p>
+          <p>{information}</p>
         </div>
       </div>
     </CardContent>
