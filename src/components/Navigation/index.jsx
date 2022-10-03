@@ -41,7 +41,7 @@ function Navigation({ onClose, open }) {
       <div className="navigation">
         <List component="nav">
           {links.map((link) => (
-            <ListItemButton onClick={onClose}>
+            <ListItemButton onClick={onClose} key={link.path}>
               <ListItemIcon>
                 <SendIcon />
               </ListItemIcon>
