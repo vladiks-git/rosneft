@@ -2,7 +2,7 @@ import React from "react";
 
 import { TextField } from "@mui/material";
 
-function FormInput({ onChange, value, label }) {
+function FormInput({ onChange, value, label, disabled }) {
   const handleChange = (event) => {
     onChange(event.target.value);
   };
@@ -13,6 +13,7 @@ function FormInput({ onChange, value, label }) {
       label={label}
       variant="outlined"
       value={value}
+      disabled={disabled}
       onChange={handleChange}
     />
   );

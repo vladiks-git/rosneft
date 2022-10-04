@@ -1,0 +1,39 @@
+.dialog {
+  .MuiPaper-root {
+    margin: 0;
+    padding: 0 20px;
+    position: relative;
+  }
+}
+
+.dialog__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &.MuiTypography-root.MuiDialogTitle-root {
+    padding: 0;
+    margin: 16px 10px;
+  }
+  span {
+    font-size: 18px;
+    font-weight: 600;
+    white-space: break-spaces;
+  }
+  &.MuiDialogTitle-root {
+    padding: 16px;
+  }
+  button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 14px;
+    padding: 2px;
+  }
+}
+.dialog__content {
+  &.MuiDialogContent-root {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}

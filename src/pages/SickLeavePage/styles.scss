@@ -1,6 +1,18 @@
 .container {
+  padding: 20px;
+  flex-direction: column;
+
+  .leave-card__create-btn.MuiButtonBase-root{
+    margin: 0 auto;
+    font-weight: 700;
+    span {
+      font-size: 30px;
+    }
+  }
+}
+.cards__wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
-  padding: 20px;
 }
