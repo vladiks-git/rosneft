@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/rosneft/static/css/main.1aee662e.css",
-    "main.js": "/rosneft/static/js/main.703a7476.js",
+    "main.css": "/rosneft/static/css/main.cf723e27.css",
+    "main.js": "/rosneft/static/js/main.6645f7ef.js",
     "index.html": "/rosneft/index.html",
-    "main.1aee662e.css.map": "/rosneft/static/css/main.1aee662e.css.map",
-    "main.703a7476.js.map": "/rosneft/static/js/main.703a7476.js.map"
+    "main.cf723e27.css.map": "/rosneft/static/css/main.cf723e27.css.map",
+    "main.6645f7ef.js.map": "/rosneft/static/js/main.6645f7ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.1aee662e.css",
-    "static/js/main.703a7476.js"
+    "static/css/main.cf723e27.css",
+    "static/js/main.6645f7ef.js"
   ]
 }
