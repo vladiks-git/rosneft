@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import dayjs from "dayjs";
 
-import { Button, TextField } from "@mui/material";
+import { Alert, Button, TextField } from "@mui/material";
 import {
   LocalizationProvider,
   MobileDatePicker,
@@ -12,10 +12,23 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import "./styles.scss";
 
 function RecordDonation() {
-  const [value, setValue] = React.useState(dayjs("2014-08-18T21:11:54"));
+  const [date, setDate] = React.useState(dayjs(new Date()));
+  const [time, setTime] = React.useState(dayjs(new Date()));
+  const [isVisibleAlert, setIsVisibleAlert] = useState(false);console.log();
 
-  const handleChange = (newValue) => {
-    setValue(newValue);
+  const handleChangeDate = (newDate) => {
+    setDate(newDate);
+  };
+
+  const handleChangeTime = (newTime) => {
+    setTime(newTime);
+  };
+
+  const handleRecord = () => {
+    setIsVisibleAlert(true);
+    setTimeout(() => {
+      setIsVisibleAlert(false);
+    }, 3000);
   };
 
   return (
@@ -25,22 +38,29 @@ function RecordDonation() {
           <MobileDatePicker
             label="Выберите день"
             inputFormat="MM.DD.YYYY"
-            value={value}
-            onChange={handleChange}
+            value={date}
+            onChange={handleChangeDate}
             renderInput={(params) => <TextField {...params} />}
           />
           <TimePicker
             label="Выберите время"
-            value={value}
-            onChange={handleChange}
+            value={time}
+            onChange={handleChangeTime}
             ampm={false}
             renderInput={(params) => <TextField {...params} />}
           />
         </div>
       </LocalizationProvider>
-      <div className="record-donation__apply">
-        <Button variant="contained">Записаться</Button>
+      <div className="record-donation__record">
+        <Button onClick={handleRecord} variant="contained">
+          Записаться
+        </Button>
       </div>
+      {isVisibleAlert && (
+        <div className="record-donation__alert">
+          <Alert severity="success">Заявка отправлена</Alert>
+        </div>
+      )}
     </div>
   );
 }
