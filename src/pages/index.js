@@ -1,5 +1,5 @@
 import AnnualInspectionPage from "./AnnualInspection";
-import DocumentsPage from "./documents";
+import DocumentsPage from "./Documents";
 import SickLeavePage from "./SickLeavePage";
 import RecordPage from "./RecordPage";
 import BloodDonation from "./BloodDonation";
