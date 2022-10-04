@@ -4,7 +4,7 @@ import { CardContent } from "../../../ui-kit";
 
 import "./style.scss";
 
-function Vaccination({ title, information }) {
+function Vaccination({ title, information, date }) {
   return (
     <CardContent>
       <div className="vaccination-card">
@@ -15,6 +15,10 @@ function Vaccination({ title, information }) {
         <div className="vaccination-card__item">
           <p className="vaccination-card__item-title">Дата выдачи</p>
           <p>16.05.2020</p>
+        </div>
+        <div className="vaccination-card__item">
+          <p className="vaccination-card__item-title">Срок действия</p>
+          <p>{date}</p>
         </div>
         <div className="vaccination-card__item">
           <p className="vaccination-card__item-title">Информация</p>
