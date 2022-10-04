@@ -37,6 +37,10 @@ const links = [
     path: "/bloodDonation",
     title: "Сдача крови",
   },
+  {
+    path: "/medicalExamination",
+    title: "Мед. осмотр",
+  },
 ];
 
 function Navigation({ onClose, open }) {

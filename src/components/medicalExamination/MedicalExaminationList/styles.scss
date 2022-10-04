@@ -1,0 +1,25 @@
+@import "../../../styles/variables.scss";
+
+.medical-examination {
+  &__yaer {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  &__content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  &__item {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #bdbdc5;
+  }
+  &__item-title {
+    color: $card-title;
+  }
+  &__item-value {
+    margin-top: 5px;
+  }
+}
