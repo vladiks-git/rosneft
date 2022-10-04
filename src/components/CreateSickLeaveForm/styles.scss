@@ -4,6 +4,9 @@
   flex-direction: column;
   gap: 16px;
   min-width: 400px;
+  @media (max-width: 490px) {
+    min-width: 0;
+  }
 }
 .form {
   &__section {

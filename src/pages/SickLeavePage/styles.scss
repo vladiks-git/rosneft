@@ -1,6 +1,9 @@
 .container {
   padding: 20px;
   flex-direction: column;
+  .record-donation__alert {
+    margin-top: 0;
+  }
 
   .leave-card__create-btn.MuiButtonBase-root{
     margin: 0 auto;

@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {CreateSickLeaveForm, Dialog, SickLeaveCard} from "../../components";
 
 import "./styles.scss";
-import {Button} from "@mui/material";
+import {Alert, Button} from "@mui/material";
 
 const sickLeaves = [
   {
@@ -39,20 +39,36 @@ const sickLeaves = [
 
 const SickLeavePage = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
+  const [isVisibleAlert, setIsVisibleAlert] = useState(false);
 
   const handleOpenModal = () => setIsOpenModal(true);
   const handleCloseModal = () => setIsOpenModal(false);
 
   const handleSaveSickLeave = () => {
-    alert("Вы успешно создали больничный лист № " + Math.floor(Math.random() * (1000 - 100 + 1)) + 100)
+    setIsVisibleAlert(true);
     handleCloseModal();
+    setTimeout(() => {
+      setIsVisibleAlert(false);
+    }, 3000)
   }
+
+  const getRandomNumber = () => Math.floor(Math.random() * (1000 - 100 + 1)) + 100;
 
   return (
       <div className="container">
-        <Button variant="filled" className="leave-card__create-btn" onClick={handleOpenModal}>
+        <Button
+          variant="filled"
+          className="leave-card__create-btn"
+          onClick={handleOpenModal}
+          disabled={isVisibleAlert}
+        >
           <span>+</span>добавить
         </Button>
+        {isVisibleAlert && (
+          <div className="record-donation__alert">
+            <Alert severity="success">Вы успешно создали больничный лист № {getRandomNumber()}</Alert>
+          </div>
+        )}
         <div className="cards__wrapper">
           {sickLeaves.map((sickLeave) => <SickLeaveCard key={sickLeave.id} sickLeaveItem={sickLeave}/> )}
         </div>

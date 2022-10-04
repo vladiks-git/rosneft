@@ -6,6 +6,7 @@ import {
   DialogContent,
   DialogTitle, IconButton
 } from "@mui/material";
+import CloseIcon from '@mui/icons-material/Close';
 
 import "./styles.scss";
 
@@ -15,7 +16,7 @@ const Dialog = ({isOpen, title, children, onClose, onSave}) => {
       <DialogTitle className="dialog__title">
         <span>{title}</span>
         <IconButton onClick={onClose}>
-          X
+          <CloseIcon />
         </IconButton>
       </DialogTitle>
       <DialogContent className="dialog__content">{children}</DialogContent>
