@@ -14,16 +14,12 @@ import { NavLink } from "react-router-dom";
 
 const links = [
   {
-    path: "/",
+    path: "/documents",
     title: "Документы",
   },
   {
     path: "/annualInspection",
     title: "Сведения о ежегодном осмотре",
-  },
-  {
-    path: "/vaccination",
-    title: "Вакцинация",
   },
   {
     path: "/record",

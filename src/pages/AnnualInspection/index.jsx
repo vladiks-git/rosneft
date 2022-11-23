@@ -1,7 +1,12 @@
-import React from "react";
+import { CardContent } from '../../ui-kit';
+import React from 'react';
 
 function AnnualInspectionPage() {
-  return <div>AnnualInspectionPage</div>;
+  return <CardContent>
+    <div className="annualInspection__item">
+
+    </div>
+  </CardContent>;
 }
 
 export default AnnualInspectionPage;
