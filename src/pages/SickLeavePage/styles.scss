@@ -1,5 +1,5 @@
 .container {
-  padding: 20px;
+  // padding: 20px;
   flex-direction: column;
   .record-donation__alert {
     margin-top: 0;
@@ -14,8 +14,11 @@
   }
 }
 .cards__wrapper {
-  display: flex;
+  // display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
+  & > div {
+    margin-top: 20px;
+  }
 }

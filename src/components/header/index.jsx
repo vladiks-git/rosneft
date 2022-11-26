@@ -32,7 +32,7 @@ export default function DenseAppBar({ onOpenNavigation }) {
               Rosneft Health
             </Typography>
           </Toolbar>
-          <p>Иванов И.И.</p>
+          <p className='person__fio'>Иванов И.И.</p>
         </div>
       </AppBar>
     </Box>
