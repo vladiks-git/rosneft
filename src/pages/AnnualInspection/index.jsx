@@ -146,7 +146,7 @@ function AnnualInspectionPage() {
           </ul>
         </div>
         <div className='annualInspection__main-doctor'>
-          Предсетадель врачебной комиссии: <p>Лапенков И.О.</p>
+          Председатель врачебной комиссии: <p>Лапенков И.О.</p>
         </div>
       </CardContent>
       <CardContent>
@@ -179,7 +179,7 @@ function AnnualInspectionPage() {
           </ul>
         </div>
         <div className='annualInspection__main-doctor'>
-          Предсетадель врачебной комиссии: <p>Лапенков И.О.</p>
+          Председатель врачебной комиссии: <p>Лапенков И.О.</p>
         </div>
       </CardContent>
     </div>
