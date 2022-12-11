@@ -1,0 +1,25 @@
+.news-card {
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  overflow: hidden;
+  width: 267px;
+  img {
+    width: 101%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__content {
+    padding: 20px 15px 20px 15px;
+  }
+  &__title {
+    font-weight: 700;
+    line-height: 24px;
+    padding-bottom: 14px;
+    border-bottom: 3px solid #e3e3e3;
+  }
+
+  &__subtitle {
+    margin-top: 10px;
+  }
+}

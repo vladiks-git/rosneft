@@ -12,7 +12,7 @@ const sickLeaves = [
     patientSnils: "123-456-789 00",
     period: "10.09.2022 - 19.09.2022",
     doctorName: "Петр Петров Петрович",
-    reason: "Впдалу работать",
+    reason: "Растяжение мышц",
     date: "09.09.2022",
   },
   {
@@ -22,7 +22,7 @@ const sickLeaves = [
     patientSnils: "123-456-789 00",
     period: "10.09.2062 - 19.09.2022",
     doctorName: "Петр Петров Петрович",
-    reason: "Впдалу работать",
+    reason: "Растяжение мышц",
     date: "09.09.2022",
   },
   {
@@ -32,7 +32,7 @@ const sickLeaves = [
     patientSnils: "123-456-789 00",
     period: "10.09.2022 - 19.09.2022",
     doctorName: "Петр Петров Петрович",
-    reason: "Впдалу работать",
+    reason: "Растяжение мышц",
     date: "09.09.2022",
   },
 ];

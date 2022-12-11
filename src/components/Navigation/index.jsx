@@ -1,55 +1,59 @@
-import React from "react";
+import React from 'react';
 import {
   Drawer,
   List,
   ListItemButton,
   ListItemIcon,
   ListItemText,
-} from "@mui/material";
+} from '@mui/material';
 
-import SendIcon from "@mui/icons-material/Send";
+import SendIcon from '@mui/icons-material/Send';
 
-import "./navigation.scss";
-import { NavLink } from "react-router-dom";
+import './navigation.scss';
+import { NavLink } from 'react-router-dom';
 
 const links = [
   {
-    path: "/documents",
-    title: "Документы",
+    path: '/documents',
+    title: 'Документы',
   },
   {
-    path: "/annualInspection",
-    title: "Сведения о ежегодном осмотре",
+    path: '/news',
+    title: 'Новости',
   },
   {
-    path: "/record",
-    title: "Запись к врачу",
+    path: '/annualInspection',
+    title: 'Сведения о ежегодном осмотре',
   },
   {
-    path: "/sickLeave",
-    title: "Больничный лист",
+    path: '/record',
+    title: 'Запись к врачу',
   },
   {
-    path: "/bloodDonation",
-    title: "Сдача крови",
+    path: '/sickLeave',
+    title: 'Больничный лист',
   },
   {
-    path: "/medicalExamination",
-    title: "Мед. осмотр",
+    path: '/bloodDonation',
+    title: 'Сдача крови',
+  },
+  {
+    path: '/medicalExamination',
+    title: 'Мед. осмотр',
   },
 ];
 
 function Navigation({ onClose, open }) {
   return (
     <Drawer open={open} onClose={onClose}>
-      <div className="navigation">
-        <List component="nav">
+      <div className='navigation'>
+        <List component='nav'>
           {links.map((link) => (
             <ListItemButton onClick={onClose} key={link.path}>
               <ListItemIcon>
                 <SendIcon />
               </ListItemIcon>
-              <NavLink className="link" to={link.path}>
+              <NavLink className='link' to={link.path}>
                 <ListItemText primary={link.title} />
               </NavLink>
             </ListItemButton>
