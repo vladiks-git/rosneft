@@ -3,6 +3,7 @@ import {
   BloodDonation,
   DocumentsPage,
   MedicalExamination,
+  PersonPlanPage,
   RecordPage,
   SickLeavePage,
 } from './pages';
@@ -21,20 +22,21 @@ function App() {
   const handleCloseNavigation = () => setIsOpenNavigation(false);
 
   return (
-    <div className='App'>
+    <div className="App">
       <Header onOpenNavigation={handleOpenNavigation} />
       <Navigation onClose={handleCloseNavigation} open={isOpenNavigation} />
       <Box p={2}>
         <Routes>
-          <Route exact path='/' element={<Navigate to={'/documents'} />} />
-          <Route exact path='/news' element={<News />} />
-          <Route path='/documents' element={<DocumentsPage />} />
-          <Route path='/annualInspection' element={<AnnualInspectionPage />} />
-          <Route path='/sickLeave' element={<SickLeavePage />} />
-          <Route path='/record' element={<RecordPage />} />
-          <Route path='/bloodDonation' element={<BloodDonation />} />
-          <Route path='/medicalExamination' element={<MedicalExamination />} />
-          <Route path='*' element={<>404</>} />
+          <Route exact path="/" element={<Navigate to={'/documents'} />} />
+          <Route exact path="/news" element={<News />} />
+          <Route exact path="/personPlan" element={<PersonPlanPage />} />
+          <Route path="/documents" element={<DocumentsPage />} />
+          <Route path="/annualInspection" element={<AnnualInspectionPage />} />
+          <Route path="/sickLeave" element={<SickLeavePage />} />
+          <Route path="/record" element={<RecordPage />} />
+          <Route path="/bloodDonation" element={<BloodDonation />} />
+          <Route path="/medicalExamination" element={<MedicalExamination />} />
+          <Route path="*" element={<>404</>} />
         </Routes>
       </Box>
     </div>

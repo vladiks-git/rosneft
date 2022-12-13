@@ -41,6 +41,10 @@ const links = [
     path: '/medicalExamination',
     title: 'Мед. осмотр',
   },
+  {
+    path: '/personPlan',
+    title: 'Индивидуальный план',
+  },
 ];
 
 function Navigation({ onClose, open }) {
