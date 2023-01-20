@@ -13,10 +13,10 @@ import './navigation.scss';
 import { NavLink } from 'react-router-dom';
 
 const links = [
-  {
-    path: '/documents',
-    title: 'Документы',
-  },
+  // {
+  //   path: '/documents',
+  //   title: 'Документы',
+  // },
   {
     path: '/news',
     title: 'Новости',
@@ -29,10 +29,10 @@ const links = [
     path: '/record',
     title: 'Запись к врачу',
   },
-  {
-    path: '/sickLeave',
-    title: 'Больничный лист',
-  },
+  // {
+  //   path: '/sickLeave',
+  //   title: 'Больничный лист',
+  // },
   {
     path: '/bloodDonation',
     title: 'Сдача крови',
