@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+.graphic {
+  &__item {
+    margin-top: 15px;
+    border-bottom: 1px solid $card-title;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+  }
+  &__workshop {
+    color: #1976d2;
+    font-weight: 600;
+  }
+}
