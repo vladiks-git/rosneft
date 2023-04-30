@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/rosneft/static/css/main.97d1f6e6.css",
-    "main.js": "/rosneft/static/js/main.8ff1e67c.js",
+    "main.css": "/rosneft/static/css/main.8b820767.css",
+    "main.js": "/rosneft/static/js/main.9fa70b39.js",
+    "static/media/news3.png": "/rosneft/static/media/news3.0fa343e2facb5bedfd82.png",
+    "static/media/logo.png": "/rosneft/static/media/logo.712a44f3c0a1bf3306a3.png",
+    "static/media/news2.png": "/rosneft/static/media/news2.0e1f5c92ac15bccea03c.png",
+    "static/media/news1.png": "/rosneft/static/media/news1.f55bed04c8e0bfdf674d.png",
     "static/media/result.png": "/rosneft/static/media/result.a8f395bbf7bef570cf59.png",
+    "static/media/user.png": "/rosneft/static/media/user.a94af5b6e54cbf96084f.png",
     "index.html": "/rosneft/index.html",
-    "main.97d1f6e6.css.map": "/rosneft/static/css/main.97d1f6e6.css.map",
-    "main.8ff1e67c.js.map": "/rosneft/static/js/main.8ff1e67c.js.map"
+    "main.8b820767.css.map": "/rosneft/static/css/main.8b820767.css.map",
+    "main.9fa70b39.js.map": "/rosneft/static/js/main.9fa70b39.js.map"
   },
   "entrypoints": [
-    "static/css/main.97d1f6e6.css",
-    "static/js/main.8ff1e67c.js"
+    "static/css/main.8b820767.css",
+    "static/js/main.9fa70b39.js"
   ]
 }
