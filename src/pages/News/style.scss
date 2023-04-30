@@ -5,4 +5,8 @@
     width: fit-content;
     margin-top: 20px;
   }
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+  }
 }

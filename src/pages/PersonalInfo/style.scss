@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+
+.personal-info {
+  &__avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  &__fio {
+    margin-top: 16px;
+    font-weight: 600;
+  }
+  &__info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .info-item {
+      padding-bottom: 6px;
+      border-bottom: 1px solid #bdbdc5;
+    }
+    .info-label {
+      color: $card-title;
+    }
+    .info-value{
+      margin-top: 6px;
+    }
+  }
+}

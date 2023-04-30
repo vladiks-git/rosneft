@@ -18,6 +18,10 @@ const links = [
   //   title: 'Документы',
   // },
   {
+    path: '/personalInfo',
+    title: 'Личный кабинет',
+  },
+  {
     path: '/news',
     title: 'Новости',
   },

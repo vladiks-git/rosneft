@@ -5,6 +5,7 @@ import {
   DocumentsPage,
   GraphicPage,
   MedicalExamination,
+  PersonaInfoPage,
   RecordPage,
   SickLeavePage,
 } from './pages';
@@ -28,7 +29,8 @@ function App() {
       <Navigation onClose={handleCloseNavigation} open={isOpenNavigation} />
       <Box p={2}>
         <Routes>
-          <Route exact path="/" element={<Navigate to={'/news'} />} />
+          <Route exact path="/" element={<Navigate to={'/personalInfo'} />} />
+          <Route exact path="/personalInfo" element={<PersonaInfoPage />} />
           <Route exact path="/news" element={<News />} />
           {/* <Route path="/documents" element={<DocumentsPage />} /> */}
           <Route path="/annualInspection" element={<AnnualInspectionPage />} />
